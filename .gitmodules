@@ -1,6 +1,0 @@
-[submodule "DataStructures"]
-	path = DataStructures
-	url = git@github.com:erempe/PHPDataStructures.git
-[submodule "DesignPattern"]
-	path = DesignPattern
-	url = git@github.com:erempe/PHPDesignPattern.git
