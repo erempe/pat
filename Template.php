@@ -7,8 +7,8 @@ namespace pat;
  */
 class Template implements DesignPattern\IPipeline {
 
-    private $_filename;
-    private $_templateVariables;
+    private $_filename = '';
+    private $_templateVariables = array();
 
     /**
      * Enter description here ...
