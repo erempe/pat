@@ -1,6 +1,0 @@
-[submodule "DataStructures"]
-	path = DataStructures
-	url = git@github.com:erempe/DataStructures.git
-[submodule "DesignPattern"]
-	path = DesignPattern
-	url = git@github.com:erempe/DesignPattern.git
