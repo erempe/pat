@@ -1,6 +1,6 @@
 <?php
 
-namespace pat\Helper;
+namespace pat\Languages\PHP;
 
 class Debug {
 
