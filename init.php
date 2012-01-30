@@ -6,10 +6,15 @@ namespace pat;
 \set_include_path(\get_include_path() . PATH_SEPARATOR
         . \realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..'));
 
-function __autoload($class)
+function __autoload($className)
 {
-    $class = str_replace('\\', '/', $class);
-    return ((include $class . '.php') === 'OK');
+    $classFile = str_replace('\\', '/', $className);
+    @include $classFile . '.php';
+    
+    if (false === class_exists($className))
+    {
+        throw new \Exception('Could not load ' . $className);
+    }
 }
 
 $success = \spl_autoload_register('pat\__autoload');
